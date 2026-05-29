@@ -1,0 +1,149 @@
+/* TESTIMONIALS */
+
+.testimonials {
+    padding: 120px 0;
+    background:
+        radial-gradient(circle at right bottom, rgba(255,31,45,0.10), transparent 35%),
+        #050505;
+}
+
+.testimonials-header {
+    max-width: 700px;
+    margin-bottom: 70px;
+}
+
+.testimonials-header h2 {
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.testimonial-card {
+    position: relative;
+
+    min-height: 360px;
+
+    padding: 38px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.015);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(255,31,45,0.25);
+
+    box-shadow:
+        0 20px 60px rgba(255,31,45,0.08);
+}
+
+.stars {
+    color: var(--red);
+
+    font-size: 28px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 34px;
+}
+
+.testimonial-text {
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #f1f1f1;
+
+    margin-bottom: 60px;
+}
+
+.testimonial-user h4 {
+    font-size: 32px;
+
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.testimonial-user span {
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1100px) {
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .testimonials {
+        padding: 70px 0;
+    }
+
+    .testimonials-header {
+        margin-bottom: 40px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .testimonial-card {
+        min-height: auto;
+
+        padding: 28px;
+
+        border-radius: 14px;
+    }
+
+    .stars {
+        font-size: 22px;
+
+        margin-bottom: 24px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 36px;
+    }
+
+    .testimonial-user h4 {
+        font-size: 18px;
+    }
+
+    .testimonial-user span {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+}

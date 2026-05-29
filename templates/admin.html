@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка — IRON CLUB</title>
+
+    <link rel="stylesheet" href="../static/css/variables.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/admin.css">
+</head>
+<body>
+
+<section class="admin-page">
+
+    <div class="admin-login" id="loginBox">
+
+        <div class="admin-login-icon">♨</div>
+
+        <h2>Вход в админку</h2>
+        <p>Ironclub Administration</p>
+
+        <label for="adminLogin">Логин</label>
+        <input type="text" id="adminLogin" placeholder="admin" autocomplete="username">
+
+        <label for="adminPassword">Пароль</label>
+        <input type="password" id="adminPassword" placeholder="••••••••" autocomplete="current-password">
+
+        <button type="button" onclick="loginAdmin()">Войти</button>
+
+        <a href="index.html" class="back-home">← На главную</a>
+
+    </div>
+
+    <div class="admin-panel hidden" id="adminPanel">
+
+        <div class="admin-top">
+            <div>
+                <div class="admin-label">IRON CLUB</div>
+                <h1>Кабинет админа</h1>
+            </div>
+
+            <button class="logout-btn" type="button" onclick="logoutAdmin()">Выйти</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 id="allCount">0</h3>
+                <p>Всего заявок</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="newCount">0</h3>
+                <p>Новые</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="doneCount">0</h3>
+                <p>Обработанные</p>
+            </div>
+        </div>
+
+        <div class="admin-section-head">
+            <h2>Заявки и обратная связь</h2>
+            <button class="clear-btn" type="button" onclick="clearDone()">Удалить обработанные</button>
+        </div>
+
+        <div id="applicationsContainer"></div>
+
+    </div>
+
+</section>
+
+<script src="../static/js/admin.js"></script>
+</body>
+</html>

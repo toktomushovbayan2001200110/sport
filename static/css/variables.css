@@ -1,0 +1,16 @@
+:root{
+    --bg:#050505;
+    --bg-secondary:#0d0d0d;
+
+    --text:#ffffff;
+    --text-secondary:#9f9f9f;
+
+    --red:#ff1f2d;
+    --red-dark:#990000;
+
+    --border:rgba(255,255,255,0.08);
+
+    --container:1500px;
+
+    --transition:0.3s ease;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифы — IRON CLUB</title>
+
+    <link rel="stylesheet" href="../static/css/variables.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/components.css">
+    <link rel="stylesheet" href="../static/css/pricing.css">
+    <link rel="stylesheet" href="../static/css/membership.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/mobile.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="mobile-menu">
+    <div class="mobile-top">
+        <a href="index.html" class="logo"><span>IRON</span> CLUB</a>
+        <button class="close-menu">✕</button>
+    </div>
+
+    <nav class="mobile-nav">
+        <a href="index.html">Главная</a>
+        <a href="membership.html">Тарифы</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="contact.html">Контакты</a>
+        <a href="admin.html">Админка</a>
+    </nav>
+
+    <a href="membership.html" class="primary-btn mobile-btn">Вступить</a>
+</div>
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo"><span>IRON</span> CLUB</a>
+
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a class="active" href="membership.html">Тарифы</a>
+            <a href="trainers.html">Тренеры</a>
+            <a href="contact.html">Контакты</a>
+            <a href="admin.html">Админка</a>
+        </nav>
+
+        <a href="membership.html" class="primary-btn header-btn">Вступить</a>
+        <button class="burger">☰</button>
+    </div>
+</header>
+
+<main>
+
+<section class="membership-page">
+    <div class="container">
+
+        <div class="pricing-header">
+            <div class="section-tag center">ЧЛЕНСТВО</div>
+
+            <h2>Выберите свой тариф.</h2>
+
+            <p>
+                Лимит мест гарантирует, что каждый член тренируется
+                в клубе, который ценит его время.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card">
+                <h3>БАЗА</h3>
+                <p class="pricing-desc">Свободный доступ. Фундамент силы.</p>
+
+                <div class="price">
+                    <span>5 200</span>
+                    <small>сом / мес</small>
+                </div>
+
+                <ul>
+                    <li>Доступ 24/7</li>
+                    <li>Все кардио и силовые зоны</li>
+                    <li>Раздевалки и сауна</li>
+                    <li>1 гостевой пропуск в месяц</li>
+                </ul>
+
+                <button class="pricing-btn outline tariff-open" data-tariff="База">
+                    ВЫБРАТЬ «БАЗА»
+                </button>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="popular-badge">ПОПУЛЯРНЫЙ</div>
+
+                <h3>ЭЛИТ</h3>
+                <p class="pricing-desc">Программа с тренером и восстановление.</p>
+
+                <div class="price">
+                    <span>11 500</span>
+                    <small>сом / мес</small>
+                </div>
+
+                <ul>
+                    <li>Всё из тарифа «База»</li>
+                    <li>2 персональные тренировки</li>
+                    <li>Безлимит групповых занятий</li>
+                    <li>Криотерапия и зона восстановления</li>
+                    <li>Консультация по питанию</li>
+                </ul>
+
+                <button class="pricing-btn filled tariff-open" data-tariff="Элит">
+                    ВЫБРАТЬ «ЭЛИТ»
+                </button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>СИГНАТУРА</h3>
+                <p class="pricing-desc">По приглашению. Без компромиссов.</p>
+
+                <div class="price">
+                    <span>26 500</span>
+                    <small>сом / мес</small>
+                </div>
+
+                <ul>
+                    <li>Всё из тарифа «Элит»</li>
+                    <li>Личный главный тренер</li>
+                    <li>Приватная тренировочная студия</li>
+                    <li>Анализы и сканирование тела</li>
+                    <li>Консьерж и доступ в путешествиях</li>
+                </ul>
+
+                <button class="pricing-btn outline tariff-open" data-tariff="Сигнатура">
+                    ВЫБРАТЬ «СИГНАТУРА»
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="comparison">
+    <div class="container">
+
+        <h2>Сравнение тарифов.</h2>
+
+        <div class="comparison-table-wrap">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Возможность</th>
+                        <th>База</th>
+                        <th class="red">Элит</th>
+                        <th>Сигнатура</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Доступ 24/7</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+
+                    <tr>
+                        <td>Персональные тренировки</td>
+                        <td>—</td>
+                        <td>2/мес</td>
+                        <td>Безлимит</td>
+                    </tr>
+
+                    <tr>
+                        <td>Зона восстановления</td>
+                        <td>—</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+
+                    <tr>
+                        <td>Сопровождение по питанию</td>
+                        <td>—</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+
+                    <tr>
+                        <td>Приватная студия</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>✓</td>
+                    </tr>
+
+                    <tr>
+                        <td>Консьерж</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<div class="tariff-modal" id="tariffModal">
+    <div class="tariff-modal-box">
+        <button class="modal-close" id="closeTariffModal">×</button>
+
+        <div class="modal-label">ЗАЯВКА НА ТАРИФ</div>
+
+        <h2 id="selectedTariff">«Элит»</h2>
+
+        <p>
+            Оставьте контактные данные — менеджер свяжется с вами для оформления.
+        </p>
+
+        <form id="tariffForm">
+            <label>Email</label>
+            <input type="email" id="tariffEmail" placeholder="you@example.com" required>
+
+            <label>Номер телефона</label>
+            <input type="tel" id="tariffPhone" placeholder="+996 700 000 000" required>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <span class="footer-logo-icon">♨</span>
+                <span>IRON <b>CLUB</b></span>
+            </div>
+
+            <p>
+                Закрытый тренировочный клуб для тех,
+                кто отказывается быть средним.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Разделы</h4>
+            <a href="membership.html">Тарифы</a>
+            <a href="trainers.html">Тренеры</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Адрес</h4>
+            <p>ул. Чуй 221</p>
+            <p>Бишкек, Кыргызстан</p>
+            <p>Открыто 24/7</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Соцсети</h4>
+            <div class="socials">
+                <a href="#">◎</a>
+                <a href="#">𝕏</a>
+                <a href="#">▶</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Ironclub. Выкован из железа.
+    </div>
+</footer>
+
+<script src="../static/js/main.js"></script>
+<script src="../static/js/membership.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* GLOBAL RESPONSIVE */
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .hero-title{
+        font-size:90px;
+    }
+
+    .hero-text{
+        font-size:26px;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .nav,
+    .header-btn{
+        display:none;
+    }
+
+    .burger{
+        display:block;
+    }
+
+    .hero-title{
+        font-size:72px;
+    }
+
+    .hero-text{
+        font-size:22px;
+    }
+
+    .hero-stats{
+        gap:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .header-container{
+        height:78px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .hero{
+        padding-top:120px;
+        padding-bottom:70px;
+    }
+
+    .hero-title{
+        font-size:58px;
+    }
+
+    .hero-text{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .hero-buttons button{
+        width:100%;
+    }
+
+    .hero-stats{
+        flex-wrap:wrap;
+        gap:30px;
+    }
+
+    .stat h3{
+        font-size:21px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero-title{
+        font-size:48px;
+    }
+
+    .hero-badge{
+        font-size:11px;
+        letter-spacing:3px;
+    }
+
+    .hero-text{
+        font-size:17px;
+    }
+
+    .mobile-nav a{
+        font-size:28px;
+    }
+
+}

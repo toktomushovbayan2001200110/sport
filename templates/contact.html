@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — IRON CLUB</title>
+
+    <link rel="stylesheet" href="../static/css/variables.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/components.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/contact.css">
+    <link rel="stylesheet" href="../static/css/mobile.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="mobile-menu">
+    <div class="mobile-top">
+        <a href="index.html" class="logo"><span>IRON</span> CLUB</a>
+        <button class="close-menu">✕</button>
+    </div>
+
+    <nav class="mobile-nav">
+        <a href="index.html">Главная</a>
+        <a href="membership.html">Тарифы</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="contact.html">Контакты</a>
+        <a href="admin.html">Админка</a>
+    </nav>
+
+    <a href="membership.html" class="primary-btn mobile-btn">Вступить</a>
+</div>
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo"><span>IRON</span> CLUB</a>
+
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="membership.html">Тарифы</a>
+            <a href="trainers.html">Тренеры</a>
+            <a class="active" href="contact.html">Контакты</a>
+            <a href="admin.html">Админка</a>
+        </nav>
+
+        <a href="membership.html" class="primary-btn header-btn">Вступить</a>
+
+        <button class="burger">☰</button>
+    </div>
+</header>
+
+<main>
+
+<section class="contact-page">
+    <div class="container">
+
+        <div class="contact-header">
+            <div class="section-tag">СВЯЖИТЕСЬ С НАМИ</div>
+
+            <h1>Войдите в двери клуба.</h1>
+
+            <p>
+                Запишитесь на приватный тур или оставьте отзыв —
+                мы читаем каждое сообщение.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <span>Адрес</span>
+                        <p>ул. Чуй 221, Бишкек</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">☎</div>
+                    <div>
+                        <span>Телефон</span>
+                        <p>+996 (700) 555-117</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <span>Email</span>
+                        <p>club@ironclub.kg</p>
+                    </div>
+                </div>
+
+                <div class="contact-card work-card">
+                    <span>Часы работы</span>
+                    <p>24 / 7 — для членов</p>
+                    <small>Ресепшн: 6:00 – 22:00 ежедневно</small>
+                </div>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Тема</label>
+                    <select id="topic">
+                        <option>Членство</option>
+                        <option>Персональные тренировки</option>
+                        <option>Отзыв</option>
+                        <option>Пресса / Партнёрство</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Оценка опыта</label>
+
+                    <div class="range-box">
+                        <input type="range" id="rating" min="1" max="5" value="5">
+                        <span id="ratingValue">5</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" rows="5" placeholder="Расскажите, что у вас на уме..." required></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">
+                    Отправить →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <span class="footer-logo-icon">♨</span>
+                <span>IRON <b>CLUB</b></span>
+            </div>
+
+            <p>
+                Закрытый тренировочный клуб для тех,
+                кто отказывается быть средним.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Разделы</h4>
+            <a href="membership.html">Тарифы</a>
+            <a href="trainers.html">Тренеры</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Адрес</h4>
+            <p>ул. Чуй 221</p>
+            <p>Бишкек, Кыргызстан</p>
+            <p>Открыто 24/7</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Соцсети</h4>
+            <div class="socials">
+                <a href="#">◎</a>
+                <a href="#">𝕏</a>
+                <a href="#">▶</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Ironclub. Выкован из железа.
+    </div>
+</footer>
+
+<script src="../static/js/main.js"></script>
+<script src="../static/js/contact.js"></script>
+
+</body>
+</html>
